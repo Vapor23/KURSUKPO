@@ -146,14 +146,6 @@ public class Tree {
         return builder.toString();
     }
 
-    private void inOrderPrint(Node root, StringBuilder builder) {
-        if (root != null) {
-            inOrderPrint(root.mLeft, builder);
-            builder.append(root + ", ");
-            inOrderPrint(root.mRight, builder);
-        }
-    }
-
     static class Node {
 
         Node mLeft;
